@@ -1,0 +1,51 @@
+.github-icon{
+  position: relative;
+  top: 20%;
+  left: 25%;
+}
+.mail-icon{
+  position: relative;
+  top: 20%;
+  left: 25%;
+}
+.mobile-icon{
+  position: relative;
+  top: 20%;
+  left: 35%;
+}
+.linkedin-icon{
+  position: relative;
+  top: 20%;
+  left: 25%;
+}
+.web-icon{
+  position: relative;
+  top: 20%;
+  left: 5%;
+}
+.fa-horse{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 15%;
+  left: 30%;
+}
+.fa-litle-work{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 15%;
+  left: 15%;
+}
+.work-meduim-position{
+  position: relative;
+  top: 20%;
+  left: 35%;
+}
+
+
+
+a:hover, a:visited,a{
+  text-decoration: none;
+  color: white;
+}

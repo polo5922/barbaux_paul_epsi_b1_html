@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Mirrored from metroui.org.ua/examples/tiles/start.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Nov 2018 20:34:23 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <meta name="twitter:title" content="CV paul barbaux">
+    <meta name="twitter:description" content="Mon cv">
+
+
+    <meta property="og:title" content="CV paul barbaux">
+    <meta property="og:description" content="Mon cv">
+
+
+    <meta name="author" content="Paul barbaux">
+
+    <link rel="shortcut icon" href="https://metroui.org.ua/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://metroui.org.ua/favicon.ico" type="image/x-icon">
+
+    <link href="metro/css/metro-all8e71.css?ver=@@b-version" rel="stylesheet">
+    <link href="css/start.css" rel="stylesheet">
+    <link rel="stylesheet" href="css\inspire-themes.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\font-mfizz.css">
+    <script src="js\fontawersome.js"></script>
+
+    <title>CV paul barbaux</title>
+</head>
+<body class="bg-dark fg-white h-vh-100">
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/svg.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  var requri  = 'https://api.github.com/users/polo5922';
+  requestJSON(requri, function(json) {
+        if(json.message == "Not Found") {
+          $('.user').html("<h2>No User Info Found</h2>");
+        }else {
+          var reposnum = json.public_repos;
+          var output = reposnum;
+          console.log(output);
+          $('#num_repo').html(output);
+  }
+  });
+
+
+  function requestJSON(url, callback) {
+      $.ajax({
+        url: url,
+        complete: function(xhr) {
+          callback.call(null, xhr.responseJSON);
+        }
+      });
+    };
+
+
+
+  </script>
+
+    <div class="container-fluid start-screen no-scroll-y h-100">
+        <h1 class="start-screen-title">CV paul barbaux</h1>
+
+        <div class="tiles-area clear">
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Contact">
+                <a target="_blank" href="https://github.com/polo5922/" data-role="tile" class="bg-indigo fg-white">
+                  <i class="fa fa-github fa-5x github-icon" aria-hidden="true"></i>
+                    <span class="branding-bar">Github</span>
+                    <span class="badge-bottom" id="num_repo">30</span>
+                </a>
+
+                <div data-role="tile" style="background-color:rgb(215, 51, 51);" data-effect="hover-zoom-left">
+                  <i class="fa fa-envelope fa-5x mail-icon" aria-hidden="true"></i>
+                    <span class="branding-bar">Email</span>
+                    <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                      <a target="_blank" href="mailto:paul.barbaux@gmail.com">
+                      <p class="text-center">
+                        paul.barbaux
+                        @gmail.com
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div data-role="tile" class="bg-cyan fg-white" data-effect="hover-zoom-right">
+                  <i class="fa fa-mobile fa-5x mobile-icon" aria-hidden="true"></i>
+                    <span class="branding-bar">Portable</span>
+                    <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                      <p class="text-center">
+                        06 10 97 10 09
+                      </p>
+                  </div>
+                </div>
+                <div data-role="tile" class="bg-cyan fg-white" data-effect="hover-zoom-left">
+                  <i class="fa fa-phone fa-5x mail-icon" aria-hidden="true"></i>
+                    <span class="branding-bar">Fixe</span>
+                    <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                      <p class="text-center">
+                        02 96 58 07 56
+                      </p>
+                  </div>
+                </div>
+                <div data-role="tile" data-effect="hover-zoom-right">
+                    <i class="fa fa-linkedin fa-5x linkedin-icon" aria-hidden="true"></i>
+                    <span class="branding-bar">Linkedin</span>
+                    <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                      <a href="https://www.linkedin.com/in/paul-barbaux-a06474171/">
+                      <p class="text-center">
+                        Paul Barbaux
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div data-role="tile" style="background-color:rgb(47, 34, 184);">
+                    <i class="fa fa-facebook fa-5x linkedin-icon" aria-hidden="true"></i>
+                    <span class="branding-bar">Facebook</span>
+                </div>
+            </div>
+
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Images">
+                <div data-role="tile" data-size="large" data-cover="images/me.jpg">
+                    <span class="branding-bar">Paul Barbaux</span>
+                </div>
+                <div data-role="tile" data-size="wide" data-effect="animate-slide-left">
+                    <div class="slide" data-cover="images/etude/1.png"></div>
+                    <div class="slide" data-cover="images/etude/2.png"></div>
+                    <div class="slide" data-cover="images/etude/3.png"></div>
+                    <span class="branding-bar">Mes etudes</span>
+                </div>
+            </div>
+
+            <div class="tiles-grid tiles-group size-1 fg-white" data-group-title="Logiciel maitrisé">
+                <div data-role="tile" data-size="small">
+                    <img src="images/Atom.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-brown">
+                    <img src="images/sql.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-green">
+                    <img src="images/idea.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-teal">
+                    <img src="images/powerpoint.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-red">
+                    <img src="images/word.png" class="icon">
+                </div>
+                <div data-role="tile" data-size="small" class="bg-teal">
+                    <img src="images/excel.png" class="icon">
+                </div>
+
+            </div>
+
+
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="compétences WEB">
+                <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+                    <i style="font-size:6em;position:relative;left:5%;top:10px;" class="fa fa-html5" aria-hidden="true"></i>
+                    <span class="branding-bar">HTML</span>
+                    <a style="position:relative;left:35%;top:-50px;" target="_blank" href="https://www.sololearn.com/Certificate/1014-11410920/pdf/?mode=read"><p>certification HTML</p></a>
+                    <div style="position:relative;bottom:-23px;" data-role="progress" data-type="load" data-value="95"></div>
+                </div>
+                <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+                    <i style="font-size:6em;position:relative;left:5%;top:10px;" class="fa fa-css3" aria-hidden="true"></i>
+                    <span class="branding-bar">CSS</span>
+                    <div style="position:relative;bottom:-47px;" data-role="progress" data-type="load" data-value="85"></div>
+                </div>
+                <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+                    <i style="font-size:6em;position:relative;left:5%;" class="icon-javascript"></i>
+                    <span class="branding-bar">JS</span>
+                    <div data-role="progress" data-type="load" data-value="75"></div>
+                </div>
+            </div>
+
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="compétences LOGICIEL">
+              <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+                  <i style="font-size:6em;position:relative;left:5%;top:-10px;" class="icon-java-bold" aria-hidden="true"></i>
+                  <span class="branding-bar">JAVA</span>
+                  <div style="position:relative;bottom:0px;" data-role="progress" data-type="load" data-value="95"></div>
+              </div>
+              <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+                  <i style="font-size:6em;position:relative;left:5%;top:5px;" class="icon-python" aria-hidden="true"></i>
+                  <span class="branding-bar">PYTHON</span>
+                  <div style="position:relative;bottom:0px;" data-role="progress" data-type="load" data-value="85"></div>
+              </div>
+              <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+                  <i style="font-size:6em;position:relative;left:5%;" class="icon-cplusplus"></i>
+                  <span class="branding-bar">C++</span>
+                  <div data-role="progress" data-type="load" data-value="75"></div>
+              </div>
+            </div>
+
+            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="travail effectué">
+                <div data-role="tile" class="bg-orange fg-white" data-size="wide" data-effect="hover-zoom-left">
+                    <i class="fa fa-car fa-5x work-meduim-position" aria-hidden="true"></i>
+                    <span class="branding-bar">Site d'auto ecole</span>
+                    <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                      <p class="text-center">
+                        Vendu en janvier 2017
+                      </p>
+                  </div>
+                </div>
+                <div data-role="tile" class="bg-orange fg-white" data-size="wide" data-effect="hover-zoom-right">
+                  <img src="images\horse-solid.svg" class="fa-horse" alt="">
+                    <span class="branding-bar">Site de centre equestre</span>
+                    <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                      <p class="text-center">
+                        Vendu en decembre 2018
+                      </p>
+                  </div>
+                </div>
+                <div data-role="tile" class="bg-cyan fg-white" data-effect="hover-zoom-right">
+                    <img src="images\carrot.svg" class="fa-litle-work" alt="">
+                    <span class="branding-bar">Maraicher</span>
+                    <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                      <p class="text-center">
+                        Travail été 2017
+                      </p>
+                  </div>
+                </div>
+                <div data-role="tile" class="bg-cyan fg-white" data-effect="hover-zoom-left">
+                    <img src="images\chef.svg" class="fa-litle-work" alt="">
+                    <span class="branding-bar">Agroalimentaire</span>
+                    <div class="slide-back d-flex flex-justify-center flex-align-center p-4 op-mauve">
+                      <p class="text-center">
+                        Travail été 2018
+                      </p>
+                  </div>
+                </div>
+            </div>
+
+
+        <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="Diplomes">
+          <a target="_blank" data-role="tile" data-cover="images/Battlefield_4_Icon.png" href="http://etudiant.aujourdhui.fr/etudiant/resultats/brevet/diplome/2014/BARBAUX_PAUL_64dabcc396676b4f75d813ddb0a4271f.html">
+            <span style="color:black;" class="branding-bar">Brevet 2014</span>
+          </a>
+          <a data-cover="images/x-box.png" data-role="tile" class="bg-green" target="_blank" href="http://m.leparisien.fr/etudiant/resultats/bac-techno/diplome/2018/BARBAUX_PAUL_c73e1ffcef3ebb0ddd6d5aa4bfc35b51.html#xtref=https%3A%2F%2Fwww.google.fr%2F">
+            <span style="color:black;" class="branding-bar">Bac 2018</span>
+          </a>
+          <div data-role="tile" style="background-color:rgb(32, 44, 236)" data-size="wide" data-cover="images/etude/3.png">
+            <span class="branding-bar">En cour d'obtention</span>
+            <span class="badge-top">5 ans</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="metro/js/metro.js"></script>
+    <script src="js/start.js"></script>
+
+</body>
+
+<!-- Mirrored from metroui.org.ua/examples/tiles/start.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Nov 2018 20:34:31 GMT -->
+</html>
