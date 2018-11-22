@@ -1,0 +1,68 @@
+@font-face {
+    font-family: custom;
+    src: url("font/stone.ttf");
+}
+*{
+  font-family: custom;
+}
+.background{
+  background: url("img/bg_zelda.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+p{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.box{
+  background-color:rgba(201, 201, 201, 0.47);
+  width:600px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border: 1px solid black;
+}
+h3{
+  text-align: center;
+  font-size: 40px;
+}
+ul{
+  text-align: center;
+}
+
+a li{
+  list-style: none;
+}
+
+.list{
+  text-decoration:none;
+  color: #358754;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list:hover{
+  color: #0bd216
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.return{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.dead{
+  color: #ff0000;
+  font-size: 45px;
+}
+.vicrory{
+  color: #00ff0c;
+  font-size: 45px;
+}
