@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Démo Jquerry</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/monokai.css">
+    <script src="js/rainbow-custom.min.js" charset="utf-8"></script>
+    <script src="js/javascript.js" charset="utf-8"></script>
+    <script src="js/js.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="section">
+      <div class="result">
+        <h1>basic</h1>
+        <p id="test_1">text</p> <span id="change_test1">change text</span>
+        <p id="test_2">color</p> <span id="change_test2">change color</span>
+        <p id="test_3">hide</p><p id="change_test3">hide/show</p>
+      </div>
+      <div class="code-html">
+        <pre>
+          <code data-language="html">
+            <h1>basic</h1>
+            <p id="test_1">text</p>
+            <span id="change_test1">change text</span>
+            <p id="test_2">color</p>
+            <span id="change_test2">change color</span>
+            <p id="test_3">hide</p>
+            <span id="change_test2">hide/show</span>
+          </code>
+        </pre>
+      </div>
+      <div class="code">
+        <pre>
+          <code data-language="javascript">
+            $(document).ready(function(){
+              $("#change_test1").click(function(){
+                $("#test_1").text("changing");
+              });
+              $("#change_test2").click(function(){
+                $("#test_2").css("color","red");
+              });
+              $("#change_test3").click(function(){
+                $("#test_3").toggle();
+              });
+            });
+          </code>
+        </pre>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="result">
+        <h1>Effects</h1>
+        <div id="test_4">fade</div>
+        <span id="change_test4">toggle fade</span>
+        <p id="test_5">slide</p>
+        <p id="change_test5">toggle slide </p>
+        <span id="change_test5_up">slide up</span> -
+        <span id="change_test5_down">slide down</span>
+        <p id="test_6">animate</p>
+        <span id="change_test6">animate</span>
+      </div>
+      <div class="code-html">
+        <pre>
+          <code data-language="html">
+            <h1>Effects</h1>
+            <div id="test_4">fade</div>
+            <span id="change_test4">toggle fade</span>
+            <p id="test_5">slide</p>
+            <p id="change_test5">toggle slide </p>
+            <span id="change_test5_up">slide up</span> -
+            <span id="change_test5_down">slide down</span>
+            <p id="test_6">animate</p>
+            <span id="change_test6">animate</span>
+          </code>
+        </pre>
+      </div>
+      <div class="code">
+        <pre>
+          <code data-language="javascript">
+            $(document).ready(function(){
+              $("#change_test4").click(function(){
+                $("#test_4").fadeToggle(2000);
+              });
+              $("#change_test5").click(function(){
+                $("#test_5").slideToggle(2000);
+              });
+              $("#change_test5_up").click(function(){
+                $("#test_5").slideUp();
+              });
+              $("#change_test5_down").click(function(){
+                $("#test_5").slideDown("fast");
+              });
+              $("#change_test6").click(function(){
+                $("#test_6").animate({
+                        opacity: '0.5',
+                        height: '150px',
+                        width: '150px'
+                    });
+              });
+            });
+          </code>
+        </pre>
+      </div>
+    </div>
+
+  </body>
+</html>
